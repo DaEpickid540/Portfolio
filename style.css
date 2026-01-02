@@ -16,8 +16,25 @@ a:hover {
     color: #910000;
 }
 
-a:visited {
-    color: #530202;
+/* Code for button colors*/
+
+.btn-red {
+    background-color: #ff0000;
+    /* bright red */
+    border-color: #ff0000;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #cc0000;
+    /* darker red */
+    border-color: #cc0000;
+}
+
+.btn-red:active {
+    background-color: #b30000;
+    /* even darker */
+    border-color: #b30000;
 }
 
 style.css body {
@@ -34,6 +51,11 @@ header.hero {
 
 h2 {
     margin-bottom: 1rem;
+    color: red;
+}
+
+p {
+    color: white;
 }
 
 #projects .card {
@@ -45,54 +67,15 @@ h2 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    overflow: hidden;
-    background-color: #cdcdcd;
-    margin: 0 auto;
+.card {
+    color: white;
 }
 
-.carousel-item .slide-image {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.card {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
-.carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    border: none;
-    top: 0;
-    left: 100%;
-}
-
-.carousel-item.active {
-    left: 0;
-    transition: all 0.3s ease-out;
-}
-
-.carousel-item div {
-    height: 100%;
-}
-
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.violet {
-    background-color: violet;
+.card:hover {
+    border-color: #ff0000;
 }
