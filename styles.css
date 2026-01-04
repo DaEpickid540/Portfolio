@@ -2,6 +2,7 @@ background-color: black;
 
 body {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -9,13 +10,30 @@ body {
     color: red;
 }
 
-.center-text {
-    text-align: center;
-}
-
 .center-block {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     /* or any width */
+}
+
+/*Card styling*/
+.custom-card {
+    background-color: #000;
+    /* black card */
+    color: white;
+    /* white text */
+    border: 2px solid #ff0000;
+    /* optional red outline */
+}
+
+.custom-title {
+    color: #ff0000;
+    /* red title */
+}
+
+.custom-card:hover {
+    border-color: #b30000;
+    transform: translateY(-3px);
+    transition: 0.2s ease;
 }
