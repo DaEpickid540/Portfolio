@@ -1,3 +1,59 @@
+/* Light mode overrides */
+.light-mode {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Navbar in light mode */
+.light-mode .custom-navbar {
+    background-color: white !important;
+    border-bottom: 2px solid red;
+}
+
+.light-mode .custom-navbar .nav-link {
+    color: black !important;
+}
+
+.light-mode .custom-navbar .nav-link:hover {
+    color: red !important;
+}
+
+.light-mode .custom-navbar .navbar-brand {
+    color: red !important;
+}
+
+/* Cards in light mode */
+.light-mode .custom-card {
+    background-color: white;
+    color: black;
+    border-color: red;
+}
+
+/* Footer in light mode */
+.light-mode .custom-footer {
+    background-color: white;
+    color: black;
+    border-top: 2px solid red;
+}
+
+/* Light mode button override */
+.light-mode .btn-danger {
+    background-color: white !important;
+    color: red !important;
+    border-color: red !important;
+}
+
+.light-mode .btn-danger:hover {
+    background-color: #ffe5e5 !important;
+    color: #b30000 !important;
+    border-color: #b30000 !important;
+}
+
+
+
+
+
+
 body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,10 +61,128 @@ body {
 }
 
 p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
+.bg-dark {
+    background-color: black !important;
+}
+
+.navbar {
+    border-bottom: 2px solid red;
+    margin-bottom: 30px;
+    /* optional red accent */
+}
+
+/* Pure black navbar */
+.custom-navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid red;
+    /* red accent line */
+}
+
+/* Navbar links */
+.custom-navbar .nav-link {
+    color: white !important;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.2s ease;
+}
+
+/* Hover color */
+.custom-navbar .nav-link:hover {
+    color: red !important;
+}
+
+/* Active link (current page) */
+.custom-navbar .nav-link.active {
+    color: red !important;
+    font-weight: bold;
+}
+
+/* Underline animation */
+.custom-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* Brand styling */
+.custom-navbar .navbar-brand {
+    color: red !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: white !important;
+}
+
+.custom-navbar .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero section spacing + color */
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.custom-navbar .nav-item {
+    margin: 0 20px;
+    /* increase left/right spacing */
+}
+
+
+/* Footer styling */
+.custom-footer {
+    background-color: #000;
+    border-top: 2px solid red;
+    color: white;
+}
+
+.footer-link {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.btn-danger {
+    background-color: black;
+    /* pure black button */
+    color: white;
+    /* white text */
+    border: 2px solid red;
+    /* red border */
+    padding: 10px 20px;
+    transition: 0.2s ease;
+    /* smooth hover */
+}
+
+.btn-danger:hover {
+    border-color: #3d0202;
+    /* darker red on hover */
+    color: #3d0202;
+    /* optional: red text on hover */
+    background-color: #0d0d0d;
+    /* slightly lighter black hover */
+}
 
 .txtRed {
     color: red;
@@ -49,4 +223,13 @@ p {
     /* white text */
     border-color: red;
     /* optional red borders */
+}
+
+/*Iframe styling*/
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: black;
 }
