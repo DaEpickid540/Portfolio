@@ -41,3 +41,12 @@ p {
     transform: translateY(-3px);
     transition: 0.2s ease;
 }
+
+.list-group-item {
+    background-color: black;
+    /* match your dark theme */
+    color: white;
+    /* white text */
+    border-color: red;
+    /* optional red borders */
+}
