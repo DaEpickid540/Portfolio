@@ -4,6 +4,12 @@ body {
     background-color: black;
 }
 
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 .txtRed {
     color: red;
 }
