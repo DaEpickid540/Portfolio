@@ -1,0 +1,21 @@
+background-color: black;
+
+body {
+    color: white;
+}
+
+
+.txtRed {
+    color: red;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* or any width */
+}
