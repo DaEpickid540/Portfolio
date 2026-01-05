@@ -135,6 +135,16 @@ p {
     margin-right: auto;
 }
 
+.navbar-toggler {
+    border-color: red;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+    /* makes it white */
+}
+
+
 /* Hero section spacing + color */
 .hero {
     padding-top: 80px;
@@ -232,4 +242,69 @@ iframe {
     border: 2px solid red;
     border-radius: 8px;
     background-color: black;
+}
+
+/* Navbar hamburger*/
+
+/* Remove Bootstrap's default icon */
+.custom-toggler .navbar-toggler-icon {
+    display: none;
+}
+
+/* Dot menu container */
+.dots-menu {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The dots */
+.dots-menu span {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+/* When menu is OPEN (no .collapsed class) */
+.navbar-toggler:not(.collapsed) .dots-menu span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    width: 20px;
+    border-radius: 3px;
+}
+
+.navbar-toggler:not(.collapsed) .dots-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .dots-menu span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    width: 20px;
+    border-radius: 3px;
+}
+
+/* Toggler border styling */
+.navbar-toggler {
+    border: 2px solid red;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/*Navbar logo styling*/
+
+.brand-logo {
+    height: 40px;
+    /* adjust as needed */
+    width: auto;
+    filter: drop-shadow(0 0 2px red);
+    /* optional red glow */
+    transition: 0.2s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
 }
