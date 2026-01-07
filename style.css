@@ -49,6 +49,28 @@
     border-color: #b30000 !important;
 }
 
+#me-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+#me-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 10px red;
+    transition: 0.3s ease;
+}
+
+#me-img:hover {
+    box-shadow: 0 0 20px #ff0000;
+    transform: scale(1.03);
+}
 
 
 
