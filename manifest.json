@@ -1,0 +1,17 @@
+{
+  "name": "Sarvin | Portfolio",
+  "short_name": "Portfolio",
+  "description": "Sarvin's developer portfolio and project showcase.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#dc3545",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "images/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["portfolio", "productivity"]
+}
