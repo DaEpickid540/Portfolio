@@ -1,10 +1,10 @@
 // Categories: "ai", "esp32", "games", "webapps", "basic-js"
 export const categories = [
-  { id: "ai", label: "AI / ML", blurb: "Agentic systems and fine-tuned models." },
-  { id: "esp32", label: "ESP32 / Hardware", blurb: "Microcontroller and IoT builds." },
-  { id: "games", label: "Games", blurb: "Built in Godot 4 and vanilla JS." },
-  { id: "webapps", label: "Advanced Web Apps", blurb: "Firebase-backed, multi-role apps." },
-  { id: "basic-js", label: "Basic JS Projects", blurb: "Early tools and course projects." },
+  { id: "ai", label: "AI / ML", blurb: "Agentic systems and fine-tuned models.", icon: "fa-solid fa-brain" },
+  { id: "esp32", label: "ESP32 / Hardware", blurb: "Microcontroller and IoT builds.", icon: "fa-solid fa-microchip" },
+  { id: "games", label: "Games", blurb: "Built in Godot 4 and vanilla JS.", icon: "fa-solid fa-gamepad" },
+  { id: "webapps", label: "Advanced Web Apps", blurb: "Firebase-backed, multi-role apps.", icon: "fa-solid fa-globe" },
+  { id: "basic-js", label: "Basic JS Projects", blurb: "Early tools and course projects.", icon: "fa-solid fa-code" },
 ];
 
 export const projects = [

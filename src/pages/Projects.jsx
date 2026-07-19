@@ -1,5 +1,6 @@
-import ProjectCard from "../components/ProjectCard.jsx";
+import { Link } from "react-router-dom";
 import { categories, projects } from "../data/projects.js";
+import "./Projects.css";
 
 export default function Projects() {
   return (
@@ -13,21 +14,28 @@ export default function Projects() {
         </p>
       </section>
 
-      {categories.map((cat) => {
-        const items = projects.filter((p) => p.categories.includes(cat.id));
-        if (items.length === 0) return null;
-        return (
-          <section className="section" key={cat.id}>
-            <h2 className="accent section-title">{cat.label}</h2>
-            <p className="section-blurb">{cat.blurb}</p>
-            <div className="project-grid">
-              {items.map((project) => (
-                <ProjectCard project={project} key={project.id} />
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      <section className="section">
+        <div className="category-grid">
+          {categories.map((cat) => {
+            const count = projects.filter((p) => p.categories.includes(cat.id)).length;
+            return (
+              <Link className="category-card" to={`/projects/${cat.id}`} key={cat.id}>
+                <div className="category-card-top">
+                  <span className="category-card-icon">
+                    <i className={cat.icon} />
+                  </span>
+                  <span className="category-card-count">{count}</span>
+                </div>
+                <h3>{cat.label}</h3>
+                <p>{cat.blurb}</p>
+                <span className="category-card-cta">
+                  View projects <i className="fa-solid fa-arrow-right" />
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 }

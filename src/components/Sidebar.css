@@ -25,10 +25,11 @@
   gap: 9px;
 }
 
-.sidebar-logo-img {
-  height: 34px;
-  width: auto;
-  filter: drop-shadow(0 0 3px var(--accent));
+.sidebar-logo-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
 .sidebar-scroll {
