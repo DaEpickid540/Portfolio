@@ -1,0 +1,100 @@
+.project-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow: hidden;
+  transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--tr);
+}
+
+.project-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card-head h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.project-subtitle {
+  margin: 0.2rem 0 0;
+  color: var(--accent);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.project-desc {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.project-subitems {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
+.project-subitems a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  background: var(--bg-inset);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.35rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-links .btn {
+  padding: 7px 14px;
+  font-size: 0.75rem;
+}

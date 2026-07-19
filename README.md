@@ -1,75 +1,49 @@
-Sarvin’s Developer Portfolio
-Welcome to my personal portfolio — a clean, modern, and slightly dramatic corner of the internet where I showcase my projects, my skills, and my obsession with red‑and‑black UI themes. Built from scratch with HTML, CSS, Bootstrap, and a whole lot of customization, this site represents who I am as a developer: detail‑oriented, creative, and always leveling up.
+# Sarvin's Developer Portfolio
 
-🚀 What’s Inside
-🧭 A Custom‑Built Interface
-Fully responsive layout
+A React + Vite portfolio showcasing AI/ML projects, ESP32 hardware builds,
+Godot games, and Firebase-backed web apps.
 
-Animated three‑dot menu that transforms into an “X”
+## Stack
 
-Smooth light/dark mode toggle
+- React 19 + React Router (HashRouter, so it works on GitHub Pages with no
+  server rewrite config)
+- Vite 7
+- Plain CSS with custom properties for dark/light theming (no UI framework)
 
-Clean, rounded UI elements with a consistent theme
+## Structure
 
-🔥 Personal Branding
-A custom‑designed infinity‑S logo
+```
+src/
+├── components/   Navbar, Footer, Hero, ProjectCard, SkillsSection, etc.
+├── pages/        Home, Projects, About
+├── data/         projects.js — single source of truth for project cards
+└── context/      ThemeContext — dark/light mode, persisted to localStorage
+```
 
-Minimal, bold, and instantly recognizable
+## Develop
 
-Integrated directly into the navbar
+```bash
+npm install
+npm run dev
+```
 
-🧩 Organized Pages
-Home — Hero section + intro
+## Build
 
-Projects — Cards, demos, and GitHub links
+```bash
+npm run build   # outputs to dist/
+npm run preview # preview the production build locally
+```
 
-About Me — Skills, background, and personality
+`vite.config.js` sets `base: "/Portfolio/"` to match this repo's GitHub
+Pages URL (`daepickid540.github.io/Portfolio/`).
 
-Contact — Ways to reach me
+## Deploy
 
-🛠️ Tech Stack
-Category	Tools
-Frontend	HTML5, CSS3, Bootstrap 5
-UI/UX	Custom CSS, animations, responsive design
-Branding	Custom logo design
-Deployment	GitHub Pages
-📂 Project Structure
-Code
-Portfolio/
-│── index.html
-│── projects.html
-│── me.html
-│── contact.html
-│── style.css
-│── script.js
-│── logo.png
-│── /images
-│── /assets
-🧪 How to Run It
-1. Clone the repo
-bash
-git clone https://github.com/daepickid540/Portfolio.git
-2. Open it
-Just open index.html in your browser. No build tools. No setup. No nonsense.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the
+site and publishes `dist/` via GitHub Pages (Actions-based deployment). In
+the repo's **Settings → Pages**, set the source to **GitHub Actions** once.
 
-3. Deploy (optional)
-This project is optimized for GitHub Pages.
-Enable Pages → select main → root folder → done.
+## Contact
 
-🌟 Future Plans
-Add animations to the hero section
-
-Add project filtering with JavaScript
-
-Add localStorage theme saving
-
-Add a blog or updates page
-
-Add a full favicon set
-
-📬 Contact
-Want to connect, collaborate, or just say hi?
-
-GitHub: github.com/daepickid540
-Phone: 513-200-8803
-Portfolio: https://daepickid540.github.io/Portfolio/
+- Email: sarvin.sukhe@gmail.com
+- GitHub: [github.com/DaEpickid540](https://github.com/DaEpickid540)

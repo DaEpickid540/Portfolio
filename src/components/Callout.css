@@ -1,0 +1,60 @@
+.callout {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto 2.5rem;
+  padding: 2rem 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--bg-card);
+  overflow: hidden;
+}
+
+.callout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
+.callout-alt::before {
+  background: #607d8b;
+}
+
+.callout-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 700;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  border-radius: var(--r-full);
+  padding: 4px 12px;
+  margin-bottom: 0.85rem;
+}
+
+.callout-alt .callout-tag {
+  color: #607d8b;
+  border-color: rgba(96, 125, 139, 0.3);
+  background: rgba(96, 125, 139, 0.1);
+}
+
+.callout h2 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.callout p {
+  margin: 0;
+  color: var(--text-2);
+  line-height: 1.65;
+  font-size: 0.88rem;
+  max-width: 720px;
+}
